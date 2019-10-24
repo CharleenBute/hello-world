@@ -1,0 +1,38 @@
+/*body{
+
+background-image: linear-gradient(to right, #020024, #0b0979,#00d4ff ) ;
+
+}*/
+/*#div-1:hover{
+	transform:rotate(40deg);
+
+}*/
+h1{
+  font-family: calibri body;
+  font-size: 20px;
+}
+#div-3{
+
+	width:100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation-name: anime;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	border: 2px solid black;
+	animation-iteration-count: 10;
+	
+
+}
+
+
+ 
+ @keyframes anime {
+
+ 	0%{ background-color: green; left:0px; top: 0px;}
+ 	25%{ background-color: red; left:300px; top: 0px;}
+ 	50%{ background-color: yellow; left:300px; top: 300px;}
+ 	75%{ background-color: pink; left:0px; top:300px;}
+ 	100%{ background-color: purple; left:0px; top: 0px;}
+ }
