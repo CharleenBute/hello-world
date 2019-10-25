@@ -11,6 +11,14 @@ h1{
   font-family: calibri body;
   font-size: 20px;
 }
+body{
+	background-image:url(../CSS/wedding.jpg);
+	width:100%;
+	background-size:cover;
+	background-attachment: fixed;
+	  
+	
+}
 #div-3{
 
 	width:100px;
