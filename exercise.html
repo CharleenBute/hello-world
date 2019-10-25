@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Exercise</title>
+</head>
+<body>
+  <h1>CAKES</h1>
+  <ul>
+  	<li>Red Velvet</li>
+  	<li>Chocolate</li>
+  	<li>Orange Cake</li>
+  	<li>Carrot Cake</li>
+  	<li>Fruit Cake</li>
+  </ul>
+  	<script>
+			//var hello="welcome";
+
+			//alert(hello);
+			//ARRAYS
+
+			var colors=['red','blue','pink']; 
+			//var colors=new Array('red','blue',pink);
+			alert(colors[0]);
+			colors.push('purple');
+		
+			alert(colors[3]);
+			alert(colors.length);
+			alert(colors.sort());
+			alert(colors.reverse());
+
+			//LOOPS
+
+			for(var i=0;i<10;i++)
+			{
+				console.log(i); 
+			}
+			//while and do while
+
+			//conditionals
+
+			var name1='charleen';
+			var name2= 'melissa';
+
+			if(name1==name2)
+			{
+				console.log('its true');
+			}
+			else
+			{
+				console.log('itx false'); 
+			}
+
+            //OBJECTS-instance of a class
+
+            var person = {
+            	firstname:'charleen',
+            	lastname:'bute',
+            	age: 20,
+            	children: ['Ngonidzashe','Charlene'],
+            	// embedded objects
+            	address: {
+            		street:'555 trees st',
+            		city:'boston',
+            		state:'US'
+
+            	},
+
+            	fullname: function()
+            	{
+            		return this.firstname + " " +this.lastname;
+            	}
+            }
+            // object constructer
+            /*var cake = new Object();
+            cake.shape='square';
+            cake.color='red velvet';
+
+	           describe: function()
+	            {
+	            	return 'cake is of shape'+this.shape+'and of flavour'+
+	            	this.flavour;
+	            }
+
+	           
+
+            console.log(person.children[1]); 
+            console.log(person.address.city);
+            console.log(person.fullname());
+            console.log(cake.describe());*/
+          
+          function Cake(name, color, shape)
+          {
+          	this.name = name;
+          	this.color = color;
+          	this.shape = shape;
+
+          	this.cake = function()
+          	{
+          		return 'a'+" "+this.name+ 'is the color'+" "+this.color+" "+'and is the shape'+" "+this.shape;
+          	}
+          }
+
+          var redvelvet = new Cake('red velvet','red','round');
+          
+          console.log(redvelvet.cake());
+
+          //arrays of objects
+
+          var team = [
+            {
+            	name:'Merylyn Tanya',
+            	role:'co-founder'
+            },
+            {
+            	name:'Melissa Tanaka',
+            	role:'kitchen manager'
+            },
+          ];
+          console.log(team[0]);
+
+          //EVENTS
+          
+		</script>
+   
+
+  
+ 
+
+
+</body>
+</html>
